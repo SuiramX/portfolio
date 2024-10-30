@@ -32,6 +32,13 @@ nav a {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
+
+}
+
+header nav>a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav a:hover {
