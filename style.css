@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #252439;
+    color: #ffffff;
 }
 
 /* Header Styles */
@@ -76,4 +76,20 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+body>header>a {
+    color: white;
+    text-decoration: none;
+
+}
+
+body>header>a:hover {
+    text-decoration: underline;
+}
+
+#about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
