@@ -6,43 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="img/Epsilogo.png"/>
+
 </head>
 
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <!-- Bouton pour télécharger mon CV -->
-        <a href="img/cv.pdf" download="cv_mariusbernard.pdf">Download CV</a>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <a href="https://github.com/SuiramX/" target="_blank">
-                <img src="img/github.png" alt="Github" style="width: 40px; height: 40px;">
-                <img src="https://github.com/SuiramX.png" alt="GitHub Profile" style="width: 40px; height: 40px;">
-                SuiramX
-            </a>
-            <a href="https://www.linkedin.com/in/marius-bernard/" target="_blank">
-                <img src="img/linkedin.png" alt="Linkedin Profile" style="width: 40px; height: 40px;">
-                Marius BERNARD
-            </a>
-        </nav>
-    </header>
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <i class="fa-solid fa-bars"></i>
+        <ul class="flex gap-8 justify-center">
 
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Bienvenue sur mon portfolio</p>
+            <li><a href="index.html" class="hidden md:flex">About Me</a></li>
+            <li><a href="project.html" class="hidden md:flex">Projects</a></li>
+            <li><a href="contact.html" class="hidden md:flex">Contact</a></li>
+        </ul>
+        <a href="https://github.com/SuiramX/" target="_blank" class="gap-2">
+            <img src="https://github.com/SuiramX.png" alt="GitHub Profile" class="w-10 h-10 rounded">
+            SuiramX
+        </a>
+        <a href="https://www.linkedin.com/in/marius-bernard/" target="_blank" class="gap-2 mt-2">
+            <img src="img/linkedin.png" alt="Linkedin Profile" class="w-10 h-10 rounded">
+            Marius BERNARD
+        </a>
+    </nav>
+</header>
 
-        <p> Bonjour, je m'appelle Marius BERNARD, je suis étudiant à l'EPSI Nantes en 2ème année de Bachelor Informatique. Je suis passionné par le développement web et mobile. Je suis actuellement à la recherche d'une alternance pour la période 2025-2026 sur Rennes.</p>
-        </p>
 
-        <h3>
-        </h3>
-    </section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Bienvenue sur mon portfolio</p>
+
+    <p> Je m'appelle Marius BERNARD, je suis étudiant à l'EPSI Nantes en 2ème année de Bachelor Informatique.
+        Je suis passionné par le développement web et mobile. Je suis actuellement à la recherche d'une alternance pour
+        la période 2025-2026 sur Rennes.</p>
+    </p>
+
+    <h3>
+    </h3>
+</section>
 </body>
 <footer>
     <p>&copy; 2023 Made By Marius BERNARD</p>
