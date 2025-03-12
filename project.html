@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes projets</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Mettre img en logo de titre-->
     <link rel="icon" type="image/png" href="img/Epsilogo.png" />
 </head>
@@ -14,18 +15,18 @@
     <header>
         <h1>My Portfolio</h1>
         <nav>
-            <ul>
+
+            <ul class="flex gap-8 justify-center">
                 <li><a href="index.html">About Me</a></li>
                 <li><a href="project.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <a href="https://github.com/SuiramX/" target="_blank">
-                <img src="img/github.png" alt="Github" style="width: 40px; height: 40px;">
-                <img    src="https://github.com/SuiramX.png" alt="GitHub Profile" style="width: 40px; height: 40px;">
+            <a href="https://github.com/SuiramX/" target="_blank" class="gap-2">
+                <img src="https://github.com/SuiramX.png" alt="GitHub Profile" class="w-10 h-10 rounded">
                 SuiramX
             </a>
-            <a href="https://www.linkedin.com/in/marius-bernard/" target="_blank">
-                <img src="img/linkedin.png" alt="Linkedin Profile" style="width: 40px; height: 40px;">
+            <a href="https://www.linkedin.com/in/marius-bernard/" target="_blank" class="gap-2">
+                <img src="img/linkedin.png" alt="Linkedin Profile" class="w-10 h-10 rounded">
                 Marius BERNARD
             </a>
         </nav>
@@ -33,27 +34,28 @@
 
 
 
-
-    <section id="projects">
-        <h2>Mes différents projets <i>avec différentes technologies & réfléxions</i></h2>
-        <div class="project">
-            <h3>Projet 1 : Gestion de Galeries</h3>
-            <p>Description et explications :</p>
+    <div class="flex justify-center gap-1">Mes différents projets <i>avec différentes technologies & réfléxions</i></div>
+    <section class="mt-4 flex flex-col md:flex-row w-full-max justify-between gap-4">
+        <div class="ml-2 flex flex-col bg-red-500 rounded basis-1/3 gap-4">
+            <h3>Projet 1 : Gestion de Galeries </h3>
+            <p>Description & explications :</p>
+            <p>Ce projet est le projet de BTS, Fais en CSharp & Symfony</p>
             <p>Lien vers le GitHub du projet :
                 <a href="https://github.com/SuiramX/Galerie">Galeries</a>
             </p>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
+        <div class="flex flex-col bg-blue-500 rounded basis-1/3 gap-4">
+            <h3>Projet 2 : Lien vers le GitHub </h3>
+            <p>Description & explications :</p>
             <p>Lien vers le GitHub du projet :
                 <a href="https://github.com/SuiramX/Galerie">Galeries</a>
             </p>
         </div>
-        <div class="project">
-            <h3>Projet 3 : Faire son portfolio en HTML/CSS Natif</h3>
+        <div class="flex flex-col bg-green-500 rounded basis-1/3 gap-4 mr-2">
+            <h3>Projet 3 : Faire son portfolio en HTML/CSS/Tailwind</h3>
+            <p>Description & explications :</p>
             <p>Lien vers le GitHub du projet :
-                <a href="https://github.com/SuiramX/portfolio">Galeries</a>
+                <a href="https://github.com/SuiramX/portfolio/">Portfolio</a>
             </p>
         </div>
     </section>
