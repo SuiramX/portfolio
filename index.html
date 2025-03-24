@@ -15,7 +15,6 @@
 <body class="bg-gray-100">
 <header class="sticky top-0 z-50 shadow-md">
     <nav>
-        <i class="fa-solid fa-bars"></i>
         <ul class="flex gap-8 justify-center">
             <li><a href="#about" class="hidden md:flex">About Me</a></li>
             <li><a href="#project" class="hidden md:flex">Projets</a></li>
@@ -28,25 +27,49 @@
 
 <section id="about" class="text-black">
     <h2>About Me</h2>
-    <p>Bienvenue sur mon portfolio</p>
+    <div class="w-full flex gap-4 max-w-4xl mx-auto">
+        <div class="w-1/2">
+            <p class="font-bold text-2xl">Qui suis-je ?</p>
+            <div class="text-gray-800 max-w-md">
+                <p> Je m'appelle Marius BERNARD, je suis étudiant à l'EPSI Nantes en 2ème année de Bachelor
+                    Informatique. Je suis passionné par le développement web et mobile.
+                    Je suis actuellement à la recherche d'une
+                    alternance pour la période 2025-2026 sur Rennes.</p>
+                </p>
 
-    <p> Je m'appelle Marius BERNARD, je suis étudiant à l'EPSI Nantes en 2ème année de Bachelor Informatique.
-    <hr>
-    Je suis passionné par le développement web et mobile. Je suis actuellement à la recherche d'une alternance pour
-    la période 2025-2026 sur Rennes.</p>
-    </p>
+                <p>Nantais depuis ma plus tendre enfance, mes envies d'ailleurs m'ont emmené dans la région bretonne, et
+                    m'amène à découvrir un nouvel environnement d'école & d'entreprise.
+                <hr>
+                Je suis déterminé pour commencer une nouvelle aventure professionnelle et je suis prêt à
+                relever de nouveaux défis.
+                J'ai toujours envie de découvrir de nouvelles choses en informatique,
+                de nouveaux langages, et apprendre tout les jours. </p>
+            </div>
+            <div class="flex gap-4 mt-8 p-4 bg-white rounded-lg shadow-md">
+                <div class="flex flex-col w-1/2 gap-4">
+                    <p class="font-bold">Nom : </p>
+                    <p class="text-gray-400"> Marius BERNARD</p>
+                    <p class="font-bold">Etudes : </p>
+                    <p class="text-gray-400"> Développement Web</p>
+                </div>
+                <div class="flex flex-col w-1/2 gap-4">
+                    <p class="font-bold">Disponibilité : </p>
+                    <p class="text-gray-400">Alternance d'une durée d'un an</p>
+                    <p class="font-bold">Email : </p>
+                    <p class="text-gray-400"> marius.bernard1@ecoles-epsi.net</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2">
+            <button class="bg-blue-100 text-gray-400 font-bold py-2 px-4 rounded-lg">
+                MB
+            </button>
 
-    <p>Nantais depuis ma plus tendre enfance, mes envies d'ailleurs m'ont emmené dans la région bretonne, et m'amène à
-        découvrir un nouvel environnement d'école & d'entreprise.
-    <hr>
-    Je suis déterminé pour commencer une nouvelle aventure professionnelle et je suis prêt à relever de nouveaux défis.
-    <hr>
-    J'ai toujours envie de découvrir de nouvelles choses en informatique, de nouveaux langages, et apprendre tout les
-    jours. </p>
-    </p>
+
+        </div>
 </section>
-<section id="competences" class="text-black">
-    <h2>Compétences</h2>
+<section id="competences" class="text-black max-w-4xl mx-auto">
+    <h2 class="text-center">Compétences</h2>
     <div class="w-full flex gap-4">
         <div class="w-1/2 bg-white rounded-lg shadow-md p-6">
             <h1 class="text-2xl font-bold mb-4">Front-end</h1>
@@ -97,9 +120,11 @@
 
 </section>
 
-<div class="flex justify-center gap-1 text-black">Mes différents projets <i>avec différentes technologies &
+<div class="flex justify-center gap-1 text-black max-w-4xl mx-auto">Mes différents projets <i>avec différentes
+    technologies &
     réfléxions</i></div>
-<section id="project" class="mt-4 text-black flex flex-col md:flex-row w-full-max justify-between gap-4 md:gap-0">
+<section id="project"
+         class="mt-4 text-black flex flex-col md:flex-row w-full-max justify-between gap-4 md:gap-0 max-w-4xl mx-auto">
     <div class="mx-2 flex flex-col bg-red-500 rounded basis-1/3 gap-4 align-center text-center hover:scale-110 duration-500 transition-transform">
         <h3 class="flex justify-center">Projet 1 : Gestion de Galeries </h3>
         <?xml version="1.0" encoding="UTF-8"?>
@@ -183,8 +208,15 @@
         <p>Malheureusement, il m'est impossible de divulguer du code en rapport avec ce projet.</p>
     </div>
 </section>
-<section class="text-black" id="contact">
-    <h2>Contact</h2>
+<section class="text-black max-w-4xl mx-auto" id="contact">
+    <h2 class="text-center">Contact</h2>
+    <div class="bg-white shadow-md">
+        <div class="font-bold">Retrouvez-moi</div>
+        <div class="flex items-center gap-4 p-3 rounded-lg hover:bg-secondary/80 transition-colors">
+
+        </div>
+    </div>
+    <p>N'hésitez pas à me contacter pour discuter de collaborations ou si vous avez des questions sur mon parcours.</p>
     <p>
         Vous pouvez me contacter à
         <a href="mailto:marius.bernard1@ecoles-epsi.net,mariusbernard.guerin@icloud.com?subject=Candidature alternance Marius BERNARD-GUIOT 2025/2026
@@ -212,14 +244,6 @@
         Marius BERNARD
     </a>
 </section>
-
-<script>
-    const bars = document.querySelector('.fa-bars');
-    const nav = document.querySelector('nav ul');
-    bars.addEventListener('click', () => {
-        nav.classList.toggle('hidden');
-    });
-</script>
 </body>
 <footer>
     <p>&copy; Dernière Mise à jour le 21/03/2025 - Fait par Marius BERNARD</p>
